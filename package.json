@@ -1,0 +1,30 @@
+{
+  "name": "junior-test",
+  "version": "0.0.1",
+  "description": "Scandiweb assignment to qulify for a job interview\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Da\u001b\u001b[C\u001b[C\u001b[C\u001b[Cqualify for a job interview",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdevjatens/junior-test-romalds-devjatens.git"
+  },
+  "author": "Romalds Devjatens",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rdevjatens/junior-test-romalds-devjatens/issues"
+  },
+  "homepage": "https://github.com/rdevjatens/junior-test-romalds-devjatens#readme",
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^3.1.0",
+    "load-grunt-tasks": "^5.1.0",
+    "node-sass": "^4.13.0"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}

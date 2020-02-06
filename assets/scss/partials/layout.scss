@@ -1,0 +1,168 @@
+//Product list------------------------------------------------------------------
+.product-list {
+  padding: 30px;
+  //Display everything in columns and rows and adds spacing from website borders
+  text-align: center;
+  display: grid;
+
+  //Depending on screen size change column count and column size
+  @media only screen and (max-width: 1920px) {
+    grid-template-columns: 300px 300px 300px 300px;
+    justify-content: space-evenly;
+  }
+  @media only screen and (max-width: 1280px) {
+    grid-template-columns: 350px 350px 350px;
+    justify-content: space-evenly;
+  }
+  @media only screen and (max-width: 1146px) {
+    grid-template-columns: 400px 400px;
+    justify-content: space-evenly;
+  }
+  @media only screen and (max-width:918px) {
+    grid-template-columns: auto;
+    margin-top: 70px;
+  }
+}
+
+.product {
+   //Add blavk shadow to products
+   box-shadow: 8px 8px $black;
+
+   //Spacing between products
+   margin-bottom: 30px;
+   padding: 20px;
+
+   background-color: $blue;
+
+   //Spacing between product data rows
+   h1 {
+    margin: 10px;
+    }
+    //When screen size is less than 918px products should be at least 150px at height
+    @media only screen and (max-width: 918px) {
+      min-height: 150px;
+      padding: 40px;
+  }
+}
+
+//Checkbox----------------------------------------------------------------------
+//Customize the label (the container)
+.container {
+ display: block;
+ position: relative;
+ padding-left: 35px;
+ margin-bottom: 12px;
+ cursor: pointer;
+ font-size: 22px;
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+}
+
+//Hide the browser's default checkbox
+.container input {
+ position: absolute;
+ opacity: 0;
+ cursor: pointer;
+ height: 0;
+ width: 0;
+}
+
+//Create a custom checkbox
+.checkmark {
+ position: absolute;
+ top: 0;
+ left: 0;
+ @media only screen and (max-width:918px) {
+   top: -15px;
+   left: -15px;
+ }
+ height: 25px;
+ width: 25px;
+ background-color: #eee;
+}
+
+//On mouse-over, add a grey background color
+.container:hover input ~ .checkmark {
+  background-color: $gray;
+}
+
+//When the checkbox is checked, add a blue background
+.container input:checked ~ .checkmark {
+  background-color: $black;
+}
+
+//Create the checkmark/indicator (hidden when not checked)
+.checkmark:after {
+ content: "";
+ position: absolute;
+ display: none;
+}
+
+//Show the checkmark when checked
+.container input:checked ~ .checkmark:after {
+ display: block;
+}
+
+//Style the checkmark/indicator
+.container .checkmark:after {
+ left: 9px;
+ top: 5px;
+ width: 5px;
+ height: 10px;
+ border: solid white;
+ border-width: 0 3px 3px 0;
+ -webkit-transform: rotate(45deg);
+ -ms-transform: rotate(45deg);
+ transform: rotate(45deg);
+}
+
+//Product add-------------------------------------------------------------------
+.product-add {
+  //Spacing from the top
+  margin-top: 100px;
+
+  //Spacing from inputs
+  padding: 20px;
+
+  //Input box height and width
+  width: 240px;
+  height: 352px;
+
+  background-color: $blue;
+
+  box-shadow: 8px 8px;
+
+  //Center input box
+  margin-right: auto;
+  margin-left: auto;
+
+  input, select {
+    width: 240px;
+    margin-bottom: 15px;
+  }
+}
+
+//Mozlla
+::placeholder {
+  color: $gray;
+  opacity: 1;
+}
+
+//Safari
+:-ms-input-placeholder {
+  color: $gray;
+}
+
+//MIcrosoft edge
+::-ms-input-placeholder {
+  color: $gray;
+}
+
+#wrong-input {
+  margin: 0;
+  margin-top: 20px;
+  color: $silver;
+  text-align: center;
+}

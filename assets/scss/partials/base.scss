@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: $pink;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+select {
+  width: 145px;
+}
+
+input {
+  background-color: $silver;
+}
+
+header {
+  height: 80px;
+  background-color: $black;
+}

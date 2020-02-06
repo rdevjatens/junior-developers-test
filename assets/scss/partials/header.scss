@@ -1,0 +1,51 @@
+header h1 {
+  //Spacing for log
+  padding-top: 20px;
+  padding-left: 20px;
+
+  //Color for logo
+  color: $silver;
+
+  //When screenzise is less than 420px logo is centered
+  @media only screen and (max-width: 420px) {
+    text-align: center;
+  }
+}
+
+//Select dropdown on the top of the product list
+.action-buttons {
+  //Position on the top right
+  position: absolute;
+  top: 25px;
+  right: 20px;
+
+  button, input, select {
+    height: 25px;
+  }
+
+  input, button {
+    //Silver colored buttons with black bold text
+    background-color: $silver;
+    border: 0px;
+    color: $black;
+    font-weight: bold;
+
+    //When hovered change color gray and blue border
+    &:hover {
+      background-color: $gray;
+      border: 1px solid $blue;
+    }
+  }
+  //When screensize is less than 472 px buttons are centered and full width with silver color
+  @media only screen and (max-width: 472px) {
+    left: 0;
+    top: 80px;
+    button, input, select {
+      border: 2px solid gray;
+      background-color: $silver;
+      width: 105%;
+      height: 40px;
+      margin-bottom: 1px;
+    }
+  }
+}
